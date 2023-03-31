@@ -1,0 +1,42 @@
+doctype html
+head
+  title Registered FO
+  link(rel='stylesheet' href='../public/css/registrated_FO.css')
+h1 Registered FO
+// Add your table for displaying FO here
+table
+  thead
+    tr
+      th Names
+      th Ward
+      th Unique FO Number
+      th Date of Registration
+      th Gender
+      th Date of Birth
+      th Activities
+      th NIN Number
+      th Phone Number
+      th Directions
+      th Type of Residence
+      th Action
+  tbody
+    tr
+      td Jane Doe
+      td Ward A
+      td FO123456
+      td 2022-01-01
+      td Female
+      td 1990-01-01
+      td Vegetable farming
+      td 1234567890123
+      td 0712345678
+      td 123 Main Street
+      td Owned
+      td
+        // Add your form for updating FO here
+        form
+          label(for='activities') Activities:
+          input#activities(type='text' name='activities')
+          label(for='phone') Phone Number:
+          input#phone(type='tel' name='phone' pattern='[0-9]{10}')
+          button(type='submit') Update

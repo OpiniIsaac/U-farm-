@@ -1,0 +1,44 @@
+doctype html
+head
+  title Appoint New FO
+  link(rel='stylesheet'  href='../public/css/FO_appiont.css')
+header
+  h1 Appoint New FO
+main
+  form
+    fieldset
+      legend Ward Information
+      label(for='ward') Ward:
+      select#ward(name='ward')
+        option(value='') Select Ward
+        option(value='ward_a') Ward A
+        option(value='ward_b') Ward B
+        option(value='ward_c') Ward C
+    fieldset
+      legend New FO Information
+      label(for='name') Name:
+      input#name(type='text' name='name')
+      label(for='unique_number') Unique FO Number:
+      input#unique_number(type='text' name='unique_number')
+      label(for='gender') Gender:
+      select#gender(name='gender')
+        option(value='') Select Gender
+        option(value='male') Male
+        option(value='female') Female
+      label(for='date_of_birth') Date of Birth:
+      input#date_of_birth(type='date' name='date_of_birth')
+      label(for='activities') Activities:
+      textarea#activities(name='activities')
+      label(for='nin_number') NIN Number:
+      input#nin_number(type='text' name='nin_number')
+      label(for='phone_number') Phone Number:
+      input#phone_number(type='text' name='phone_number')
+      label(for='directions') Directions:
+      textarea#directions(name='directions')
+      label(for='type_of_residence') Type of Residence:
+      select#type_of_residence(name='type_of_residence')
+        option(value='') Select Type of Residence
+        option(value='owned') Owned
+        option(value='rented') Rented
+        option(value='other') Other
+    button(type='submit') Appoint FO

@@ -1,0 +1,57 @@
+doctype html
+head
+  title AO Registration Form
+  link(rel='stylesheet' href='../public/css/FO_registration.css')
+h1 AO Registration Form
+form#regForm(name='register' onsubmit='return Validate();')
+  label(for='fo_name') FO Name:
+  input#fo_name(type='text' name='fo_name')
+  small#fo_name_err
+  br
+  label(for='ward') Ward Represented:
+  input#ward(type='text' name='ward')
+  small#ward_err
+  br
+  label(for='fo_number') Unique FO Number:
+  input#fo_number(type='text' name='fo_number')
+  small#fo_number_err
+  br
+  label(for='registration_date') Date of Registration:
+  input#registration_date(type='date' name='registration_date')
+  br
+  label(for='gender') Gender:
+  input#male(type='radio' name='gender' value='male')
+  label(for='male') Male
+  input#female(type='radio' name='gender' value='female')
+  label(for='female') Female
+  small#gender_err
+  br
+  label(for='dob') Date of Birth:
+  input#dob(type='date' name='dob')
+  br
+  label(for='activities') Activities Involved:
+  textarea#activities(name='activities')
+  small#activities_err
+  br
+  label(for='nin') NIN Number:
+  input#nin(type='text' name='nin')
+  small#nin_err
+  br
+  label(for='directions') Directions to Home:
+  textarea#directions(name='directions')
+  small#directions_err
+  br
+  label(for='residence_type') Residence Type:
+  select#residence_type(name='residence_type')
+    option(value='') --Select--
+    option(value='Own') Own
+    option(value='Rent') Rent
+    option(value='Other') Other
+  br
+  label(for='period_of_stay') Period of Stay in Ward (in years):
+  input#period_of_stay(type='number' name='period_of_stay')
+  small#period_of_err
+  br
+  button Submit
+// <script src="./regFormValidation.js"></script>
+script(src='./FOregistraction.js')
