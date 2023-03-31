@@ -1,13 +1,14 @@
 doctype html
-head
-  title Agricultural Officer dashaboard 
-   link(rel='stylesheet', href='css/AO_dashboard.css')
-   script(src='js/showpage.js') 
-   body 
+html
+  head
+    title Agricultural Officer Dashboard
+    link(rel='stylesheet', href='/css/AO_dashboard.css')
+    script(src='js/showpage.js') 
+  body
     #sidebar
-    .sidebar-item(onclick="showPage('FOregistration')") FO Registration
-    .sidebar-item(onclick="showPage('registratedFO')") Registered FO
-    .sidebar-item(onclick="showPage('appiontNewFO')") Appoint New FO
-    .sidebar-item(onclick="showPage('FOauth')") FO Authentication
-    iframe#page-content(src='FOregistration.html')
-    h1 hello world   
+      .sidebar-item(onclick="showPage('FO_registration')") FO Registration
+      .sidebar-item(onclick="showPage('registratedFO')") Registered FO
+      .sidebar-item(onclick="showPage('appiontNewFO')") Appoint New FO
+      .sidebar-item(onclick="showPage('FOauth')") FO Authentication
+    iframe#page-content(src='FO_registration.pug')
+  
