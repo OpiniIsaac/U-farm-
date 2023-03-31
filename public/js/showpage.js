@@ -1,20 +1,17 @@
 function showPage(pageName) {
     var iframe = document.getElementById("page-content");
     switch (pageName) {
-        case "FOregistration":
-            iframe.src = "FOregistration.html";
-            break;
-        case "registratedFO":
-            iframe.src = "registratedFO.html";
-            break;
-        case "appiontNewFO":
-            iframe.src = "appiontNewFO.html";
-            break;
-        case "FOauth":
-            iframe.src = "FOauth.html";
-            break;
+      case "FO_registration":
+        iframe.src = "FO_registration.pug";
+        break;
+      case "registratedFO":
+        iframe.src = "registratedFO.pug";
+        break;
+      case "appiontNewFO":
+        iframe.src = "FO_appoint.pug";
+        break;
+      case "FOauth":
+        iframe.src = "FOauth.pug";
+        break;
     }
-
-
-}
-console.log('hello world')
+  }
